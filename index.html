@@ -22,8 +22,8 @@
   .stage::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:0;
     background:radial-gradient(820px 520px at 92% -10%, rgba(255,106,44,0.13), transparent 60%),
       radial-gradient(640px 460px at -8% 112%, rgba(255,106,44,0.06), transparent 60%);}
-  .slide{position:absolute;inset:0;display:none;flex-direction:column;justify-content:center;padding:5vh 6.5vw;z-index:1}
-  .slide.active{display:flex;animation:rise .5s cubic-bezier(.2,.7,.2,1)}
+  .slide{position:absolute;inset:0;display:none;flex-direction:column;justify-content:center;padding:5vh 6.5vw;z-index:1;visibility:hidden}
+  .slide.active{display:flex;visibility:visible;animation:rise .5s cubic-bezier(.2,.7,.2,1)}
   @keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
   .kicker{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--orange);font-weight:600;margin-bottom:1.1rem;display:flex;align-items:center;gap:.7rem}
   .kicker::before{content:"";width:26px;height:2px;background:var(--orange);display:inline-block}
